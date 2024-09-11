@@ -2,7 +2,6 @@ import { DivvyBase } from '../common/common'
 import type {
     CreateCustomField,
     CustomField,
-    CustomFieldFilters,
     CustomFieldValue,
     ListCustomFieldsParams,
     ListCustomFieldValuesParams,
