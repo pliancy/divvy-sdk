@@ -1,0 +1,50 @@
+{
+  "name": "@pliancy/divvy-sdk",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "license": "MIT",
+  "type": "module",
+  "author": {
+    "name": "Santese Smith",
+    "email": "santese@pliancy.com"
+  },
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/index.js",
+      "default": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pliancy/divvy-sdk.git"
+  },
+  "keywords": [
+    "divvy",
+    "bill.com"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "check-exports": "attw --pack . ",
+    "check-format": "prettier --check .",
+    "format": "prettier --write .",
+    "lint": "tsc",
+    "qa": "concurrently 'yarn check-format' 'yarn lint' 'yarn test' 'yarn check-exports'",
+    "test": "vitest run",
+    "test:watch": "vitest --watch"
+  },
+  "devDependencies": {
+    "@arethetypeswrong/cli": "^0.16.2",
+    "concurrently": "^9.0.0",
+    "prettier": "^3.3.3",
+    "tsup": "^8.2.4",
+    "typescript": "^5.6.2",
+    "vitest": "^2.0.5"
+  },
+  "dependencies": {
+    "axios": "^1.7.7"
+  }
+}
