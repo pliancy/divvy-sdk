@@ -1,0 +1,10 @@
+repository:
+  # See https://developer.github.com/v3/repos/#edit for all available settings.
+
+  # The name of the repository. Changing this will rename the repository
+  name: divvy-sdk
+  # A short description of the repository that will show up on GitHub
+  description: A typescript SDK for the Divvy API
+
+  # A comma-separated list of topics to set on the repository
+  topics: nodejs, module, sdk, typescript, divvy
