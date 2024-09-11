@@ -33,6 +33,7 @@
     "format": "prettier --write .",
     "lint": "eslint .",
     "qa": "concurrently 'yarn check-format' 'yarn lint' 'yarn test' 'yarn check-exports' 'yarn ts:lint'",
+    "semantic-release": "semantic-release",
     "test": "vitest run",
     "test:watch": "vitest --watch",
     "ts:lint": "tsc",
