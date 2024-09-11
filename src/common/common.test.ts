@@ -26,7 +26,7 @@ vi.mock('axios', () => {
 
 class TestDivvyBase extends DivvyBase {
     public async testPaginate<T>(endpoint: string, params: any) {
-        return this.paginate<T, any>(endpoint, params)
+        return this.paginate<T>(endpoint, params)
     }
 }
 

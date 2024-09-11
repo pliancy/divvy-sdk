@@ -23,14 +23,21 @@ describe('Transactions Class', () => {
             // Mock the paginate method
             vi.spyOn(transactions as any, 'paginate').mockResolvedValue(mockTransactions)
 
-            const params = { max: 50, filters: { cardId: 'card123' } }
+            const params = {
+                max: 50,
+                filters: {
+                    cardId: {
+                        eq: '1234',
+                    },
+                },
+            }
             const result = await transactions.list(params)
 
             expect(result).toEqual(mockTransactions)
-            expect((transactions as any).paginate).toHaveBeenCalledWith(
-                '/spend/transactions',
-                params,
-            )
+            expect((transactions as any).paginate).toHaveBeenCalledWith('/spend/transactions', {
+                ...params,
+                filters: 'cardId:eq:"1234"',
+            })
         })
 
         it('should handle errors from paginate method', async () => {
