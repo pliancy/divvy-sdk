@@ -40,30 +40,30 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@arethetypeswrong/cli": "0.16.2",
+    "@arethetypeswrong/cli": "0.17.0",
     "@eslint/js": "9.10.0",
     "@semantic-release/commit-analyzer": "13.0.0",
     "@semantic-release/git": "10.0.1",
-    "@semantic-release/github": "10.3.3",
+    "@semantic-release/github": "10.3.5",
     "@semantic-release/npm": "12.0.1",
     "@semantic-release/release-notes-generator": "14.0.1",
     "@typescript-eslint/eslint-plugin": "8.5.0",
     "@typescript-eslint/parser": "8.5.0",
-    "commitizen": "4.3.0",
-    "concurrently": "9.0.0",
+    "commitizen": "4.3.1",
+    "concurrently": "9.1.0",
     "eslint": "9.10.0",
-    "husky": "9.1.5",
+    "husky": "9.1.6",
     "pinst": "3.0.0",
     "prettier": "3.3.3",
-    "semantic-release": "24.1.1",
-    "tsup": "8.2.4",
-    "typescript": "5.6.2",
+    "semantic-release": "24.2.0",
+    "tsup": "8.3.5",
+    "typescript": "5.6.3",
     "typescript-eslint": "8.5.0",
-    "vitest": "2.0.5"
+    "vitest": "2.1.5"
   },
   "dependencies": {
     "axios": "1.7.7",
-    "tslib": "2.7.0"
+    "tslib": "2.8.1"
   },
   "config": {
     "commitizen": {
@@ -71,7 +71,7 @@
     }
   },
   "volta": {
-    "node": "20.17.0",
+    "node": "20.18.0",
     "yarn": "1.22.22"
   }
 }
