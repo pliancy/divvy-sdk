@@ -8,12 +8,7 @@ export interface ListTransactionsParams {
 }
 
 export type ReceiptStatus =
-    | 'VALIDATED'
-    | 'NOT_VALIDATED'
-    | 'ATTACHED'
-    | 'MISSING'
-    | 'NOT_REQUIRED'
-    | 'NOT_ATTACHED'
+    'VALIDATED' | 'NOT_VALIDATED' | 'ATTACHED' | 'MISSING' | 'NOT_REQUIRED' | 'NOT_ATTACHED'
 
 export type TransactionType = 'CLEAR' | 'DECLINE' | 'AUTHORIZATION' | 'OTHER'
 
@@ -77,12 +72,7 @@ export interface Transaction {
     }>
     reviewers: Array<{
         approverType:
-            | 'ADMIN'
-            | 'MANAGER'
-            | 'NEXT_MANAGER'
-            | 'BUDGET_OWNER'
-            | 'BOOKKEEPER'
-            | 'SPECIFIC_PERSON'
+            'ADMIN' | 'MANAGER' | 'NEXT_MANAGER' | 'BUDGET_OWNER' | 'BOOKKEEPER' | 'SPECIFIC_PERSON'
         reviewedTime: Date
         reviewerId: number
         status: 'WAITING' | 'APPROVED' | 'DENIED'
